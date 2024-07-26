@@ -1,4 +1,3 @@
--- Active: 1721941603966@@127.0.0.1@3306@khalid
 CREATE DATABASE IF NOT EXISTS alx_book_store;
 USE alx_book_store;
 
@@ -26,4 +25,11 @@ CREATE TABLE Orders (
  order_id INT Primary Key,
  customer_id INT FOREIGN KEY (customer_id) REFERENCES Customers(customer_id),
  order_date DATE
+);
+
+CREATE TABLE Order_Details(
+    orderdetailid INT primary Key,
+    order_id INT FOREIGN KEY (order_id) REFERENCES Orders(order_id),
+    book_id INT FOREIGN KEY (book_id) REFERENCES Books(book_id),
+    quantity DOUBLE
 );

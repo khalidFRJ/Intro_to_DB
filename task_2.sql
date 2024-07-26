@@ -1,4 +1,3 @@
--- Active: 1721941603966@@127.0.0.1@3306@khalid
 CREATE DATABASE IF NOT EXISTS alx_book_store;
 USE alx_book_store;
 

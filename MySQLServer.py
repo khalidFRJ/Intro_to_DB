@@ -4,4 +4,6 @@ if conn.is_connected():
    print("connection etablished")
    
 CREATE DATABASE IF NOT EXISTS alx_book_store
+except mysql.connector.Error
+
 
